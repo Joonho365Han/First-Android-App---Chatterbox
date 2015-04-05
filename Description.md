@@ -7,7 +7,7 @@ We had to figure out how to code in Java from a sample application given by the 
 The sample app automatically calculated the total amount of a bill after a tip is calculated.
 I started to meddle with its .xml and .java file through Android Studio and learned the componentes and codes of the basic Android app.
 
-This app is a simple forum for TV show enthusiasts who enjoy discussions about a specific TV show depending on the topic.
+This app is called Chatterbox and is a simple forum for TV show enthusiasts who enjoy discussions about a specific TV show depending on the topic.
 It was inspired by my teammate Lindsey Dunphy, who also enjoys watching TV shows.
 Creating this app not only taught me how to create an app in Java, but also taught me the esseatial perks of software development teamwork.
 Also, it gave me an experience of actually using my knowledge to create a valuable product for people other than me.
