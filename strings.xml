@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- strings.xml is where all the values of the strings used in your views are stored.
+    They are referenced in the .xml files, which are subsequently used in your code (.java files) -->
+
+    <string name="app_name">TipCalculator</string>
+
+    <!-- Main.xml Strings -->
+    <string name="main_title">Welcome to Chatterbox bitches!</string>
+
+    <!-- Main page strings -->
+    <string name="main_promptText_1">Username</string>
+    <string name="main_promptText_2">Password</string>
+    <string name="main_signIn">Sign in</string>
+    <string name="main_signUp">Sign up</string>
+
+    <!-- signup page strings -->
+    <string name="signUp_promptText">E-mail</string>
+    <string name="signUp_signUp">Create Account!</string>
+
+    <!--  Error Strings -->
+    <string name="error_et">Oops! Please enter a value as your total bill.</string>
+
+</resources>

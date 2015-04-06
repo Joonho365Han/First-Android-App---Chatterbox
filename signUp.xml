@@ -25,21 +25,14 @@
 
 
     <!-- A view that prompts the user to enter a bill -->
-    <TextView
-        android:id="@+id/signup_"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/main_title"
-        android:textSize="20sp"
-        android:layout_marginTop="25dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
 
     <!-- A field for the edit text, a view that can take input from the user, placed below the textview -->
 
     <!-- Make a button for 5% tip that will be above the 10% tip button  -->
 
     <!-- Button for 20% tip -->
+
+
     <EditText
         android:id="@+id/signUp_username_input"
         android:layout_width="wrap_content"
@@ -47,7 +40,7 @@
         android:gravity="center"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:layout_centerVertical="true"
+        android:layout_alignTop="@+id/signUp_username"
         android:layout_alignLeft="@+id/signUp_password_input" />
 
     <EditText
@@ -63,35 +56,30 @@
         <requestFocus />
     </EditText>
 
-    <Button
-        android:id="@+id/main_signUp"
-        android:text="@string/main_signUp"
-        android:layout_width="120dp"
+    <EditText
+        android:id="@+id/signUp_email_input"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/main_signIn"
-        android:layout_alignBottom="@+id/main_signIn"
-        android:layout_alignRight="@+id/signup_" />
+        android:gravity="center"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/signUp_password_input"
+        android:layout_alignLeft="@+id/signUp_password_input" />
 
     <!-- Button for 15% tip -->
-    <Button
-        android:id="@+id/main_signIn"
-        android:text="@string/main_signIn"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/signUp_password_input"
-        android:layout_alignLeft="@+id/signup_" />
 
     <!-- The text in this line is not a background. Must find a way to make it anonymous -->
 
+
     <TextView
-        android:id="@+id/main_username"
+        android:id="@+id/signUp_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/main_promptText_1"
+        android:text="@string/signUp_promptText"
         android:textSize="20sp"
-        android:layout_alignTop="@+id/signUp_username_input"
-        android:layout_alignLeft="@+id/signUp_password" />
+        android:layout_alignTop="@+id/signUp_email_input"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:id="@+id/signUp_password"
@@ -99,18 +87,39 @@
         android:layout_height="wrap_content"
         android:text="@string/main_promptText_2"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:layout_below="@+id/signUp_username_input"
+        android:layout_above="@+id/signUp_username_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+    <TextView
+        android:id="@+id/signUp_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_promptText_1"
+        android:textSize="20sp"
+        android:layout_above="@+id/signUp_signUp"
+        android:layout_alignLeft="@+id/signUp_password"
+        android:layout_marginBottom="25dp" />
+
+    <Button
+        android:id="@+id/signUp_signUp"
+        android:text="@string/signUp_signUp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/signUp_username"
+        android:id="@+id/logo_chatterbox"
+        android:focusableInTouchMode="false"
         android:src="@drawable/chatterbox_logo"
-        android:layout_below="@+id/signup_"
-        android:layout_alignRight="@+id/main_username"
-        android:layout_marginTop="20dp" />
+        android:layout_above="@+id/signUp_email_input"
+        android:layout_alignRight="@+id/signUp_username"
+        android:layout_marginBottom="22dp" />
+
     <!-- Button for 10% tip -->
 
     <!-- Text view for "select tip" on the main menu-->
