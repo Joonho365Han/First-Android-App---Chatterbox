@@ -9,5 +9,6 @@ I started to meddle with its .xml and .java file through Android Studio and lear
 
 This app is called Chatterbox and is a simple forum for TV show enthusiasts who enjoy discussions about a specific TV show depending on the topic.
 It was inspired by my teammate Lindsey Dunphy, who also enjoys watching TV shows.
-Creating this app not only taught me how to create an app in Java, but also taught me the esseatial perks of software development teamwork.
-Also, it gave me an experience of actually using my knowledge to create a valuable product for people other than me.
+Creating this app not only taught me how to create an app in Java, but also gave me an experience of making valuable product for people other than me.
+But the most important lessons were the perks of being a great team player. 
+The skills I learned back then still guides me through whenever I have a team project. 
