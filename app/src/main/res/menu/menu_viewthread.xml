@@ -1,14 +1,21 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MyActivity">
+    tools:context=".ViewThread">
 
     <item
         android:id="@+id/action_refresh"
         android:title="@string/action_refresh"
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
-        android:icon="@drawable/refresh" />
+        android:icon="@drawable/refresh"/>
+
+    <item
+        android:id="@+id/action_addComment"
+        android:title="@string/action_addComment"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/comment"/>
 
     <item
         android:id="@+id/action_myShows"
@@ -16,6 +23,12 @@
         android:orderInCategory="100"
         android:showAsAction="ifRoom"
         android:icon="@drawable/shows_home"/>
+
+    <item
+        android:id="@+id/action_myActivity"
+        android:title="@string/action_myActivity"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
 
     <item
         android:id="@+id/action_addShows"

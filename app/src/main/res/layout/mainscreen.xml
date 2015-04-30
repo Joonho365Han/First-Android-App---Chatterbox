@@ -1,66 +1,50 @@
 <TabHost
         xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:id="@+id/mainTabs"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true">
 
         <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/main_showIcon"
+                android:layout_width="match_parent"
+                android:contentDescription="@string/icon_description"
+                android:layout_height="100dp"/>
 
             <TabWidget
                 android:id="@android:id/tabs"
-                android:layout_width="fill_parent"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 </TabWidget>
 
             <FrameLayout
                 android:id="@android:id/tabcontent"
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                    <LinearLayout
-                        android:id="@+id/main_episode"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical">
+                <fragment
+                    android:name="com.ec327.chatterbox.chatterbox.MainTabEpisode"
+                    android:id="@+id/main_episode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
-                        <ListView
-                            android:id="@android:id/list"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </ListView>
-                    </LinearLayout>
+                <fragment
+                    android:name="com.ec327.chatterbox.chatterbox.MainTabSeason"
+                    android:id="@+id/main_season"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
-                    <LinearLayout
-                        android:id="@+id/main_season"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical">
-
-                        <ListView
-                            android:id="@android:id/list"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </ListView>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/main_series"
-                        android:layout_width="fill_parent"
-                        android:layout_height="fill_parent"
-                        android:orientation="vertical">
-
-                        <ListView
-                            android:id="@android:id/list"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                        </ListView>
-                    </LinearLayout>
+                <fragment
+                    android:name="com.ec327.chatterbox.chatterbox.MainTabSeries"
+                    android:id="@+id/main_series"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
 
             </FrameLayout>
         </LinearLayout>

@@ -9,10 +9,12 @@ import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
+//SignUp function cited from http://www.sitepoint.com/creating-cloud-backend-android-app-using-parse/
 public class SignUp extends Activity {
 
     protected EditText usernameEditText;
@@ -26,6 +28,9 @@ public class SignUp extends Activity {
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
         getActionBar().setDisplayHomeAsUpEnabled(true);
         setContentView(R.layout.signup);
+
+        //Parse is initiallized not just to exchange data but also to reconnect in case of crash.
+        Parse.initialize(this, "sIIPDbEWnnRETu0XlKQL6QMER34bBR3ZPNV2Ibmu", "OGFvOpzYbYNsb4n9xEHIaT8vdiZFvXZOXxFAzer4");
 
         usernameEditText = (EditText) findViewById(R.id.signUp_nickname_input);
         passwordEditText = (EditText) findViewById(R.id.signUp_password_input);

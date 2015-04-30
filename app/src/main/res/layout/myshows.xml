@@ -8,132 +8,82 @@
         android:layout_gravity="center_horizontal" >
 
         <LinearLayout
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            xmlns:tools="http://schemas.android.com/tools"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:context=".MyShows">
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_GOT"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/got"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_greysAnatomy"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/greys_anatomy"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_daredevil"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/daredevil"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_flash"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/flash"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_100"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/the100"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_once"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/once"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_FOB"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/fob"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_htgawm"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/htgawm"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_silliconValley"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/silicon_valley"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_madmen"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/madmen"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_HOC"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/hoc"/>
+                android:layout_height="wrap_content"/>
 
-            <ImageButton
+            <FrameLayout
                 android:id="@+id/myshows_arrow"
+                android:layout_weight="0"
                 android:layout_width="fill_parent"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:gravity="left"
-                android:contentDescription="@string/thread"
-                android:onClick="openForum"
-                android:background="@drawable/arrow"/>
+                android:layout_height="wrap_content"/>
 
        </LinearLayout>
 </ScrollView>

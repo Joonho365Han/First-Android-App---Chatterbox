@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddComment"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/comment_content_input"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:paddingTop="5dp"
+        android:hint="@string/comment_hint"
+        android:gravity="top"
+        android:inputType="textCapSentences|textMultiLine"
+        android:maxLength="2000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/post_thread"
+        android:id="@+id/comment_post"
+        android:layout_gravity="center_horizontal"
+        android:onClick="postComment"/>
+
+</LinearLayout>

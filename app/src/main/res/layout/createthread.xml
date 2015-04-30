@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Thread"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ask_Title"
+            android:id="@+id/thread_title" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:inputType="textCapSentences"
+            android:id="@+id/thread_title_input" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ask_season"
+            android:id="@+id/thread_seasonNepisode" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/thread_season_hint"
+            android:id="@+id/thread_season_input" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:inputType="number"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:hint="@string/thread_episode_hint"
+            android:id="@+id/thread_episode_input" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/ask_content"
+            android:id="@+id/thread_content" />
+
+        <EditText
+            android:id="@+id/thread_content_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:inputType="textCapSentences|textMultiLine"
+            android:scrollHorizontally="false"
+            android:maxLength="2000" />
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/thread_post_category"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/post_thread"
+            android:id="@+id/thread_post"
+            android:layout_gravity="center_horizontal"
+            android:onClick="postThread"/>
+
+</LinearLayout>

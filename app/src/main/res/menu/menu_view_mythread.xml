@@ -1,18 +1,18 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".MyShows">
+    tools:context=".ViewMyThread">
+
+    <item
+        android:id="@+id/action_myShows"
+        android:title="@string/action_myShows"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:icon="@drawable/shows_home" />
 
     <item
         android:id="@+id/action_addShows"
         android:title="@string/action_addShows"
-        android:orderInCategory="100"
-        android:showAsAction="ifRoom"
-        android:icon="@drawable/add"/>
-
-    <item
-        android:id="@+id/action_myActivity"
-        android:title="@string/action_myActivity"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>

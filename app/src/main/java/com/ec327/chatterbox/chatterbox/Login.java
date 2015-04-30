@@ -14,6 +14,8 @@ import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
+//Login function cited from http://www.sitepoint.com/creating-cloud-backend-android-app-using-parse/
+
 public class Login extends Activity {
 
     protected EditText usernameEditText;
@@ -25,6 +27,7 @@ public class Login extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        //Parse is initiallized not just to exchange data but also to reconnect in case of crash.
         Parse.initialize(this, "sIIPDbEWnnRETu0XlKQL6QMER34bBR3ZPNV2Ibmu", "OGFvOpzYbYNsb4n9xEHIaT8vdiZFvXZOXxFAzer4");
 
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
@@ -35,6 +38,7 @@ public class Login extends Activity {
         loginButton = (Button)findViewById(R.id.login_signIn);
         signupButton = (Button)findViewById(R.id.login_signUp);
 
+        //sends the user to signup screen
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -43,6 +47,7 @@ public class Login extends Activity {
             }
         });
 
+        //Checks login info.
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +57,7 @@ public class Login extends Activity {
                 username = username.trim();
                 password = password.trim();
 
+                //If nickname or passworkd fiels is empty, shows error message.
                 if (username.isEmpty() || password.isEmpty()) {
                     AlertDialog.Builder builder = new AlertDialog.Builder(Login.this);
                     builder.setMessage(R.string.login_error_message)
@@ -68,6 +74,7 @@ public class Login extends Activity {
                         public void done(ParseUser user, ParseException e) {
                             setProgressBarIndeterminateVisibility(false);
 
+                            //If nickname and password match and are in the database, loggs in the user.
                             if (e == null) {
                                 // Success!
                                 Intent intent = new Intent(Login.this, MyShows.class);

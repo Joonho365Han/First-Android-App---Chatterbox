@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="thread_type">
+        <item>Post is about an episode</item>
+        <item>Post is about a season</item>
+        <item>Post is about the series</item>
+    </string-array>
+</resources>

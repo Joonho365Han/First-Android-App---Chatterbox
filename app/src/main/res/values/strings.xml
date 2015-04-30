@@ -4,44 +4,68 @@
     They are referenced in the .xml files, which are subsequently used in your code (.java files) -->
 
     <!--app screen titles-->
-    <string name="app_name">Chatterbox</string>
+    <string name="app_name">ChatterBox</string>
     <string name="title_addshows">Add Shows</string>
-    <string name="title_myactivity">Activity</string>
     <string name="title_myshows">Shows</string>
+    <string name="title_threads">Threads</string>
+    <string name="title_comment">Add Comment</string>
 
     <!-- Login.xml Strings -->
-    <string name="login_title">Welcome to Chatterbox!</string>
     <string name="login_promptText_1">Nickname</string>
     <string name="login_promptText_2">Password</string>
     <string name="login_signIn">Sign in</string>
     <string name="login_signUp">Sign up</string>
     <string name="username_hint">Nickname</string>
     <string name="password_hint">Password</string>
-    <string name="email_hint">Email</string>
-    <string name="sign_up_button_label">Sign Up</string>
     <string name="signup_error_message">Please enter all categories: nickname, password, and email address</string>
     <string name="signup_error_title">Error</string>
-    <string name="login_error_message">Please enter a nickname and a password.</string>
+    <string name="login_error_message">Please enter all fields.</string>
     <string name="login_error_title">Error</string>
 
     <!-- signup page strings -->
     <string name="signUp_promptText">E-mail</string>
-    <string name="signUp_signUp">Send Confirmation Code</string>
+    <string name="signUp_signUp">Create Account!</string>
 
-    <!--email confirm page strings-->
-    <string name="confirm_hint">Please enter the passcode.</string>
-    <string name="confirm_create">Create Account!</string>
+    <!-- Add Comment page string -->
+    <string name="comment_hint">Enter comment here.</string>
 
     <!--  Random uncategorized Strings -->
-    <string name="error_et">Oops! Please enter a value as your total bill.</string>
-    <string name="done">Done</string>
-    <string name="thread">It\'s a photo.</string>
-    <string name="icon_description">This is the Chatterbox logo.</string>
-    <string name="main_hello_world">This screen needs tab features.</string>
+    <string name="update_list">Update</string>
+    <string name="icon_description">This is the ChatterBox logo.</string>
+    <string name="thread">It\'s a photo</string>
 
     <!-- Action button titles-->
     <string name="action_addShows">Add Shows</string>
     <string name="action_myActivity">My Activity</string>
+    <string name="action_refresh">Refresh</string>
     <string name="action_myShows">My Shows</string>
+    <string name="action_createThread">New Thread</string>
+    <string name="action_addComment">Comment</string>
 
+    <!--CreateThread screen strings-->
+    <string name="ask_Title">Title</string>
+    <string name="ask_season">Season/Episode</string>
+    <string name="ask_content">Content</string>
+    <string name="post_thread">Post</string>
+    <string name="thread_error_message">Error for thread.</string>
+    <string name="thread_error_title">Please enter a title</string>
+    <string name="thread_season_hint">Enter the season number.</string>
+    <string name="thread_episode_hint">Enter the episode number.</string>
+
+    <!-- Show Titles -->
+    <string name="GOT">Game of Thrones</string>
+    <string name="grey">Grey\'s Anatomy</string>
+    <string name="dare">Daredevil</string>
+    <string name="flash">Flash</string>
+    <string name="the100">The 100</string>
+    <string name="once">Once Upon A Time</string>
+    <string name="fob">Fresh Off the Boat</string>
+    <string name="murder">How to Get Away with Murder</string>
+    <string name="silicon">Silicon Valley</string>
+    <string name="mad">Mad Men</string>
+    <string name="hoc">House of Cards</string>
+    <string name="arrow">Arrow</string>
+
+    <!--Add Comment Strings-->
+    <string name="enter_comment">Please enter a comment.</string>
 </resources>
