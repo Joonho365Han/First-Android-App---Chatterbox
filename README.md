@@ -13,4 +13,4 @@ Creating this app not only taught me how to create an app in Java, but also gave
 But the most important lesson was that to be a good programmer, you cannot know only one aspect of what you are working on.
 Being the GUI programmer does not mean you do not have to know about the backend.
 Being the Backend programmer does not mean you do not have to know about the GUI.
-To make a good app, understand the interaction between each individual components are crucial, and this is the main difference between a technician and an engineer.
+To make a good app, understanding the interaction between each individual components are crucial, and this is the main difference between a technician and an engineer.
