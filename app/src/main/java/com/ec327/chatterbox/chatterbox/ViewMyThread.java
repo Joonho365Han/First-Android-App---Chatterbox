@@ -22,7 +22,6 @@ public class ViewMyThread extends Activity {
         TextView season_episode = (TextView) findViewById(R.id.viewThread_Season);
         TextView writer = (TextView) findViewById(R.id.viewThread_Writer);
         TextView content = (TextView) findViewById(R.id.viewThread_Content);
-        TextView commentSection  = (TextView) findViewById(R.id.viewThread_CommentSection);
         TextView comments  = (TextView) findViewById(R.id.viewThread_Comments);
 
         String[] post = getIntent().getStringArrayExtra("Contents");
@@ -32,9 +31,8 @@ public class ViewMyThread extends Activity {
         season_episode.setText("<Season " + post[2] + " Episode " + post[3] + ">");
         writer.setText("By " + post[4]);
         content.setText(post[5]);
-        commentSection.setText("<CANNOT VIEW OTHERS' COMMENTS WITH MY ACTIVITY>");
+        comments.setText("<CANNOT VIEW OTHERS' COMMENTS WITH MY ACTIVITY>");
         if(post[6].length()!=0) {
-            commentSection.setText("");
             comments.setText("USER COMMENT:\n" + post[6]);
         }
     }

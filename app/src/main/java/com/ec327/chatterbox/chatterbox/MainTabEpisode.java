@@ -27,7 +27,7 @@ public class MainTabEpisode extends ListFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         refreshThreadList();
-        return inflater.inflate(R.layout.main_episode_tab, container, false);
+        return inflater.inflate(R.layout.mainscreen_tab_list, container, false);
     }
 
     @Override

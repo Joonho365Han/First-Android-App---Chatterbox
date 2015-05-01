@@ -103,7 +103,6 @@ public class ViewThread extends Activity {
         final TextView season_episode = (TextView) findViewById(R.id.viewThread_Season);
         final TextView writer = (TextView) findViewById(R.id.viewThread_Writer);
         final TextView content = (TextView) findViewById(R.id.viewThread_Content);
-        final TextView commentSection = (TextView) findViewById(R.id.viewThread_CommentSection);
         final TextView comments  = (TextView) findViewById(R.id.viewThread_Comments);
 
         String[] post = getIntent().getStringArrayExtra("Contents");
@@ -120,9 +119,6 @@ public class ViewThread extends Activity {
                     season_episode.setText("<Season " + object.getString("season") + " Episode " + object.getString("episode") + ">");
                     writer.setText("By " + object.getString("writer"));
                     content.setText(object.getString("content"));
-                    commentSection.setText("");
-                    if(object.getString("comments").length()==0)
-                        commentSection.setText("<No comments>");
                     comments.setText(object.getString("comments"));
                 }
             }
